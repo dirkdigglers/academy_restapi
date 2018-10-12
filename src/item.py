@@ -70,22 +70,25 @@ def read_all(length=0, offset=0):
 
     :return:        json string of list of items
     """
-      
+    
+    # Load Items 
+    dictItem = json.load(ITEMS)
+    
     # Test if Ansible has worked correct
-    if len(ITEMS) < 1 :
+    if len(dictItem) < 1 :
         print("ERROR item.py - read_all: The item list has length 0. ")
         abort(500, 'temp.py - read_all(): Error reading item list.')
 
     # Control, if function attributes are set correct
     if offset is 0:
-        offset = len(ITEMS)
+        offset = len(dictItem)
 
     # Cut list
-    if (length < len(ITEMS) ):
-       listSelOrg = ITEMS[length: offset + length]
-
-    # Return Value
-    return [ITEMS[key] for key in sorted(ITEMS.keys())]
+    if (length < len(dictItem) ):
+       resultItem = dictItem[length: offset + length]
+       
+        # Return Value
+    return [resutItem[key] for key in sorted(resultItem.keys())]
     
 
 
