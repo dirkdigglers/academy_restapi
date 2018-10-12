@@ -21,7 +21,7 @@ RUN apk add --no-cache curl && \
 RUN pip3 install flask connexion configparser flask_cors requests
 
 # Setup Environment 
-COPY python/ /srv/ 
+COPY src/ /srv/ 
 RUN  chmod u+x /srv/server.py
 RUN  chmod u+x /srv/test.py; cd /srv
 
