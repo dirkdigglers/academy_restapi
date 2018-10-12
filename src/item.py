@@ -17,46 +17,56 @@ from flask import (
 
 # Static Data to serve with API
 ITEMS = {
-    "DE000A1EWWW0" : {
+    [
+    {
+        "name":"DE000A1EWWW0",
         "description":"addidas",
         "price":"192,65",
         "timestamp":"2018-10-11 17:35:00"
-    },   
-    "DE0008404005" : {
+    },    
+    {   
+        "name":"DE0008404005",
         "description":"Allianz",
         "price":"182,28",
         "timestamp":"2018-10-11 17:35:00"
     },
-    "DE000BASF111" : {
+    {
+        "name":"DE000BASF111",
         "description":"BASF",
         "price":"70,00",
         "timestamp":"2018-10-11 17:35:00"
-    },   
-    "DE000BAY0017" : {
+    },       
+    {
+        "name":"DE000BAY0017",
         "description":"Bayer",
         "price":"77,32",
         "timestamp":"2018-10-11 17:35:00"
-    },   
-    "DE0005200000" : {
+    },    
+    {   
+        "name":"DE0005200000",
         "description":"Beiersdorf",
         "price":"89,62",
         "timestamp":"2018-10-11 17:35:00"
-    },   
-    "DE0005190003" : {
+    },      
+    { 
+        "name":"DE0005190003",
         "description":"BMW",
         "price":"74,30",
         "timestamp":"2018-10-11 17:35:00"
     },  
-    "DE0005439004" : {
+    {
+        "name":"DE0005439004",
         "description":"Continental",
         "price":"137,00",
         "timestamp":"2018-10-11 17:35:00"
     },  
-    "DE0006062144" : {
+    {
+        "name":"DE0006062144", 
         "description":"Covestro",
         "price":"61,72",
         "timestamp":"2018-10-11 17:35:00"
-    }      
+    }
+    ]
 }
  
 # Function to generate Timestamp 
