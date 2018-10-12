@@ -72,7 +72,7 @@ def read_all(length=0, offset=0):
     """
     
     # Load Items 
-    dictItem = json.load(ITEMS)
+    dictItem = ITEMS
     
     # Test if Ansible has worked correct
     if len(dictItem) < 1 :
