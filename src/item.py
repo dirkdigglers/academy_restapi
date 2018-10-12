@@ -95,6 +95,8 @@ def read_all(length=0, offset=0):
     # Cut list
     if (length < len(dictItem) ):
        resultItems = dictItem[length: offset + length]
+    else:
+       resultItems = dictItem
        
         # Return Value
     return resutItems
