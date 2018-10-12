@@ -1,0 +1,47 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file defines the Endpoints
+  version: "1.0.0"
+  title: Swagger ReST API
+consumes:
+  - application/json
+produces:
+  - application/json
+ 
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /item:
+    get: 
+      operationId: item.read_all
+      tags:
+        - item
+      summary: Reads all items and gives them back
+      description: Reads all items and gives them back
+      parameters:
+        - name: length
+          in: query
+          type: integer
+          description: Number of first Entry of item list witch is send back
+          required: false
+        - name: offset
+          in: query
+          type: integer
+          description: How many items will be shown from list
+          required: false
+      responses:
+        200:
+          description: Successfully read items list operation
+          schema:
+            type: "array"
+            items:
+              properties:
+                name:
+                  type: "string"
+                description:
+                  type: "string"
+                price:
+                  type: "string"
+                timestamp:
+                  type: "string"
