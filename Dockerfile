@@ -27,7 +27,7 @@ RUN  chmod u+x /srv/test.py; cd /srv
 
 # Start Server
 WORKDIR /srv
-#ENTRYPOINT /srv/server.py
-ENTRYPOINT /bin/sh
+ENTRYPOINT /srv/server.py
+#ENTRYPOINT /bin/sh
 
  
