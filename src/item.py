@@ -99,7 +99,7 @@ def read_all(length=0, offset=0):
        resultItems = dictItem
        
         # Return Value
-    return [resultItems]
+    return (resultItems)
     
 
 
