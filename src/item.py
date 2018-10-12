@@ -16,8 +16,7 @@ from flask import (
 )
 
 # Static Data to serve with API
-ITEMS = {
-    [
+ITEMS = [
     {
         "name":"DE000A1EWWW0",
         "description":"addidas",
@@ -66,8 +65,8 @@ ITEMS = {
         "price":"61,72",
         "timestamp":"2018-10-11 17:35:00"
     }
-    ]
-}
+]
+
  
 # Function to generate Timestamp 
 def get_timestamp():
