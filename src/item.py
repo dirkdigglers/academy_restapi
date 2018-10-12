@@ -94,10 +94,10 @@ def read_all(length=0, offset=0):
 
     # Cut list
     if (length < len(dictItem) ):
-       resultItem = dictItem[length: offset + length]
+       resultItems = dictItem[length: offset + length]
        
         # Return Value
-    return [resutItem[key] for key in sorted(resultItem.keys())]
+    return resutItems
     
 
 
